@@ -1,0 +1,18 @@
+
+section {
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.game-container {
+    background-color: #afcee7;
+    height: 16 * 1.5rem;
+    width: 12 * 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1.5rem);
+    grid-template-rows: repeat(16, 1.5rem);
+}

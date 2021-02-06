@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #19354D;
+    
+    
+    justify-content: center;
+
+}
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+//modifier classes
+
+.flex {
+    display: flex;
+
+    &--column {
+        flex-direction: column;
+    }
+
+    &-end {
+        align-self: flex-end;
+    }
+}
+

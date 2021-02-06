@@ -1,0 +1,118 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #19354D;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.nav {
+  background-color: #50A9F2;
+}
+
+footer {
+  margin-top: auto;
+}
+
+section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.game-container {
+  background-color: #afcee7;
+  height: 24rem;
+  width: 18rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1.5rem)[12];
+      grid-template-columns: repeat(12, 1.5rem);
+  -ms-grid-rows: (1.5rem)[16];
+      grid-template-rows: repeat(16, 1.5rem);
+}
+
+.game-item {
+  margin: 3px;
+}
+
+.game-item--bobble-hat {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-item--wriggle {
+  margin-right: 25px;
+}
+
+.small-square {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: black solid 1px;
+}
+
+.small-square--yellow {
+  background-color: yellow;
+}
+
+.small-square--blue {
+  background-color: #0044ff;
+}
+
+.small-square--red {
+  background-color: red;
+}
+
+.small-square--green {
+  background-color: #19cf19;
+}
+
+.row-transform--right {
+  -webkit-transform: translateX(1.5rem);
+          transform: translateX(1.5rem);
+}
+/*# sourceMappingURL=main.css.map */

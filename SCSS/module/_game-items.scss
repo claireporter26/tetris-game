@@ -1,0 +1,44 @@
+.game-item {
+    margin: 3px;
+
+    &--bobble-hat {
+        align-items: center;
+        
+    }
+
+    &--wriggle {
+        margin-right: 25px;
+    }
+
+
+}  
+
+
+
+.small-square {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: black solid 1px;
+    
+
+    &--yellow {
+        background-color: yellow;
+    }
+
+    &--blue {
+        background-color: rgb(0, 68, 255);
+    }
+
+    &--red {
+        background-color: red;
+    }
+
+    &--green {
+        background-color: rgb(25, 207, 25);
+    }
+}
+
+.row-transform--right {
+    transform: translateX(1.5rem);
+    
+}
