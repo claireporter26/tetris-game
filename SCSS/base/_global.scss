@@ -9,7 +9,7 @@ html {
 
 body {
     height: 100%;
-    background-color: #19354D;
+    background-color: #1b1f22;
     
     
     justify-content: center;
@@ -40,5 +40,9 @@ img {
     &-end {
         align-self: flex-end;
     }
+}
+
+.no-pointer-events {
+    pointer-events: none;
 }
 

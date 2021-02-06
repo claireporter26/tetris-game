@@ -9,7 +9,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #19354D;
+  background-color: #1b1f22;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -43,6 +43,10 @@ img {
       align-self: flex-end;
 }
 
+.no-pointer-events {
+  pointer-events: none;
+}
+
 .nav {
   background-color: #50A9F2;
 }
@@ -64,7 +68,7 @@ section {
 }
 
 .game-container {
-  background-color: #afcee7;
+  background-color: #e2e4e7;
   height: 24rem;
   width: 18rem;
   display: -ms-grid;
@@ -77,6 +81,9 @@ section {
 
 .game-item {
   margin: 3px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  cursor: pointer;
 }
 
 .game-item--bobble-hat {
@@ -109,6 +116,14 @@ section {
 
 .small-square--green {
   background-color: #19cf19;
+}
+
+.small-square--majenta {
+  background-color: #f53af5;
+}
+
+.small-square--orange {
+  background-color: #ff7b00;
 }
 
 .row-transform--right {

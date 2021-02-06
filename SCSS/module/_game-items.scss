@@ -1,5 +1,7 @@
 .game-item {
     margin: 3px;
+    transform-origin: center;
+    cursor: pointer;
 
     &--bobble-hat {
         align-items: center;
@@ -35,6 +37,14 @@
 
     &--green {
         background-color: rgb(25, 207, 25);
+    }
+
+    &--majenta {
+        background-color: rgb(245, 58, 245);
+    }
+
+    &--orange {
+        background-color: rgb(255, 123, 0);
     }
 }
 
