@@ -9,10 +9,12 @@ section {
 }
 
 .game-container {
-    background-color: #e2e4e7;
+    // background-color: #e2e4e7;
+    position: relative;
+    border: cornsilk 2px solid;
     height: 16 * 1.5rem;
     width: 12 * 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1.5rem);
-    grid-template-rows: repeat(16, 1.5rem);
+    // display: grid;
+    // grid-template-columns: repeat(12, 1.5rem);
+    // grid-template-rows: repeat(16, 1.5rem);
 }

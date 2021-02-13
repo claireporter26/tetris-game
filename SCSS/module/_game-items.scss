@@ -5,6 +5,10 @@
     transition: transform 1s;
     transform-origin: center center;
     display: inline-block;
+    position: absolute;
+    top: -8rem;
+    left: 45%;
+    
 
     &-container {
      
@@ -72,5 +76,15 @@
 
 .rotate180 {
     transform: rotate(180deg) ;
+    transform-origin: center center;
+}
+
+.rotate270 {
+    transform: rotate(270deg) ;
+    transform-origin: center center;
+}
+
+.rotate360 {
+    transform: rotate(360deg) ;
     transform-origin: center center;
 }
