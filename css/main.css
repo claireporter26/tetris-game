@@ -80,10 +80,14 @@ section {
 }
 
 .game-item {
-  margin: 3px;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  margin: 0;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 .game-item--bobble-hat {
@@ -100,6 +104,7 @@ section {
   height: 1.5rem;
   width: 1.5rem;
   border: black solid 1px;
+  pointer-events: none;
 }
 
 .small-square--yellow {
@@ -129,5 +134,19 @@ section {
 .row-transform--right {
   -webkit-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
+}
+
+.rotate90 {
+  -webkit-transform: rotate(90deg) translateX(50%) translateY(50%);
+          transform: rotate(90deg) translateX(50%) translateY(50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg) translateY(50%);
+          transform: rotate(180deg) translateY(50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 /*# sourceMappingURL=main.css.map */

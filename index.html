@@ -13,76 +13,102 @@
     </nav>
 
     <div class="game-items flex">
-        <div class="game-item game-item--tall">
-            <div class="small-square small-square--yellow"></div>
-            <div class="small-square small-square--yellow"></div>
-            <div class="small-square small-square--yellow"></div>
-            <div class="small-square small-square--yellow"></div>
-        </div>
-        <div class="game-item game-item--square flex">
-            <div class="top-row">
-                <div class="small-square small-square--blue"></div>
-                <div class="small-square small-square--blue"></div>
-            </div>
-            <div class="bottom-row">
-                <div class="small-square small-square--blue"></div>
-                <div class="small-square small-square--blue"></div>
+        <div class="game-item game-item--tall" onclick="rotateItem(this)">
+            <div class="game-item-container ">
+                <div class="small-square small-square--yellow"></div>
+                <div class="small-square small-square--yellow"></div>
+                <div class="small-square small-square--yellow"></div>
+                <div class="small-square small-square--yellow"></div>
             </div>
         </div>
-        <div class="game-item game-item--bobble-hat flex flex--column">
-            <div class="top-row">
-                <div class="small-square small-square--red"></div>
-                
-            </div>
-            <div class="bottom-row flex">
-                <div class="small-square small-square--red"></div>
-                <div class="small-square small-square--red"></div>
-                <div class="small-square small-square--red"></div>
-            </div>
-        </div>
-        <div class="game-item game-item--wriggle flex--column">
-            <div class="top-row row-transform--right flex">
-                <div class="small-square small-square--green"></div>
-                <div class="small-square small-square--green"></div> 
-            </div>
-            <div class="bottom-row flex">
-                <div class="small-square small-square--green"></div>
-                <div class="small-square small-square--green"></div>
+        <div class="game-item" onclick="rotateItem(this)">
+            <div class="game-item-container game-item--square flex no no-pointer-events" >
+                <div class="top-row no-pointer-events">
+                    <div class="small-square small-square--blue"></div>
+                    <div class="small-square small-square--blue"></div>
+                </div>
+                <div class="bottom-row no-pointer-events">
+                    <div class="small-square small-square--blue"></div>
+                    <div class="small-square small-square--blue"></div>
+                </div>
             </div>
         </div>
-        <div class="game-item game-item--forwardL flex--column">
-            <div class="top-row">
-                <div class="small-square small-square--majenta"></div>
-                <div class="small-square small-square--majenta"></div> 
-            </div>
-            <div class="bottom-row flex">
-                <div class="small-square small-square--majenta"></div>
-                <div class="small-square small-square--majenta"></div>
+        <div class="game-item">
+            <div class="game-item-container game-item--bobble-hat flex flex--column">
+                <div class="top-row no-pointer-events">
+                    <div class="small-square small-square--red"></div>
+                    
+                </div>
+                <div class="bottom-row no-pointer-events flex">
+                    <div class="small-square small-square--red"></div>
+                    <div class="small-square small-square--red"></div>
+                    <div class="small-square small-square--red"></div>
+                </div>
             </div>
         </div>
-        <div class="game-item game-item--mirroredL flex--column">
-            <div class="top-row flex flex--column">
-                <div class="small-square small-square--orange flex-end"></div>
-                <div class="small-square small-square--orange flex-end"></div> 
+        <div class="game-item">
+            <div class="game-item-container game-item--wriggle flex--column">
+                <div class="top-row row-transform--right no-pointer-events flex">
+                    <div class="small-square small-square--green"></div>
+                    <div class="small-square small-square--green"></div> 
+                </div>
+                <div class="bottom-row no-pointer-events flex">
+                    <div class="small-square small-square--green"></div>
+                    <div class="small-square small-square--green"></div>
+                </div>
             </div>
-            <div class="bottom-row flex">
-                <div class="small-square small-square--orange"></div>
-                <div class="small-square small-square--orange"></div>
+        </div>
+        <div class="game-item">
+            <div class="game-item-container game-item--forwardL flex--column">
+                <div class="top-row no-pointer-events">
+                    <div class="small-square small-square--majenta"></div>
+                    <div class="small-square small-square--majenta"></div> 
+                </div>
+                <div class="bottom-row no-pointer-events flex">
+                    <div class="small-square small-square--majenta"></div>
+                    <div class="small-square small-square--majenta"></div>
+                </div>
+            </div>
+        </div>
+        <div class="game-item">
+            <div class="game-item-container game-item--mirroredL flex--column">
+                <div class="top-row no-pointer-events flex flex--column">
+                    <div class="small-square small-square--orange flex-end"></div>
+                    <div class="small-square small-square--orange flex-end"></div> 
+                </div>
+                <div class="bottom-row no-pointer-events flex">
+                    <div class="small-square small-square--orange"></div>
+                    <div class="small-square small-square--orange"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <section class="main-section flex">
         <div class="container game-container">
-            <div class="game-item game-item--tall" onclick="rotateItem(this)">
-                <div>
-                    <div class="small-square small-square--yellow no-pointer-events"></div>
-                    <div class="small-square small-square--yellow no-pointer-events"></div>
-                    <div class="small-square small-square--yellow no-pointer-events"></div>
-                    <div class="small-square small-square--yellow no-pointer-events"></div>
+            <div class="game-item" onclick="rotateItem(this)">
+                
+                <div class="game-item-container game-item--tall">
+                    <div class="small-square small-square--yellow"></div>
+                    <div class="small-square small-square--yellow"></div>
+                    <div class="small-square small-square--yellow"></div>
+                    <div class="small-square small-square--yellow"></div>
                 </div>
             </div>
-        </div>
+            <!-- <br> -->
+            
+            <div class="game-item">
+                <div class="game-item-container game-item--square flex">
+                    <div class="top-row no-pointer-events">
+                        <div class="small-square small-square--blue"></div>
+                        <div class="small-square small-square--blue"></div>
+                    </div>
+                    <div class="bottom-row no-pointer-events">
+                        <div class="small-square small-square--blue"></div>
+                        <div class="small-square small-square--blue"></div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <footer class="nav footer">

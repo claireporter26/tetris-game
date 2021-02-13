@@ -1,7 +1,13 @@
 .game-item {
-    margin: 3px;
-    transform-origin: center;
+    margin: 0;
+    // transform-origin: center;
     cursor: pointer;
+    transition: transform 1s;
+    transform-origin: center center;
+
+    &-container {
+     
+    }
 
     &--bobble-hat {
         align-items: center;
@@ -21,6 +27,7 @@
     height: 1.5rem;
     width: 1.5rem;
     border: black solid 1px;
+    pointer-events: none;
     
 
     &--yellow {
@@ -51,4 +58,15 @@
 .row-transform--right {
     transform: translateX(1.5rem);
     
+}
+
+.rotate90 {
+    transform: rotate(90deg) translateX(50%) translateY(50%);
+    transform-origin: center center;
+    
+}
+
+.rotate180 {
+    transform: rotate(180deg) translateY(50%);
+    transform-origin: center center;
 }
