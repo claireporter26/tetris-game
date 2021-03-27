@@ -1,13 +1,34 @@
+// @keyframes fall {
+//     0% {
+//         left: 45%;
+//         top: -50px;
+//     }
+
+//     100% {
+//         left: 45%;
+//         bottom: -15rem;
+//     }
+// }
+
 .game-item {
     margin: 0;
     // transform-origin: center;
     cursor: pointer;
     transition: transform 1s;
     transform-origin: center center;
+
     display: inline-block;
     position: absolute;
     top: -8rem;
     left: 45%;
+
+    // &-fall {
+    //     position: relative;
+    //     animation-name: fall;
+    //     animation-timing-function: linear;
+    //     animation-fill-mode: forwards;
+    //     animation-duration: 4s;
+    // }
     
 
     &-container {

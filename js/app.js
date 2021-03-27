@@ -30,28 +30,23 @@ function rotateItem(item){
 }
 
 function startGame() {
-    gameItems[0]
+    // gameItems[0].classList.add("game-item-fall")
+    i = 0;
+    
+
+    console.log(gameItems[0].parentElement.parentElement.style)
+    // gameItems[0].style.top = "-6rem"
+
+    // gameItems[0].style.bottom = gameItems.parentElement.parentElement.style.top.value
+
+    // while (gameItems[0].style.bottom > 0)
+    console.log(gameItems[i].parentElement.parentElement)
+    // while (gameItems[i].style.bottom.value > 1){
+    //     gameItems[0].style.transform = "translateY(1.5rem)"
+    // }
+    
 }
 
 
-//might work
 
-// var eventValue = function (event) {
-//     document.body.appendChild(document.createElement('div'))
-//     .textContent = event.type;
-//  }
-//  var pressed = document.querySelector("#pressButtonDemo");
-//  pressed.addEventListener("click", eventValue);
-
-
-// gameItems.forEach(function(item){
-
-//     item.addEventListener('click', rotateItem(e))
-//     // item.addEventListener('click', function(e){
-//     //     // let clickedItem = e.target;
-        
-
-//     //     // clickedItem.style.transform = "rotate(90deg)";
-//     // })
-// });
 
