@@ -18,3 +18,9 @@ section {
     // grid-template-columns: repeat(12, 1.5rem);
     // grid-template-rows: repeat(16, 1.5rem);
 }
+
+#canvas {
+    height: 450px;
+    width: 300px;
+    border: solid 2px white;
+}
