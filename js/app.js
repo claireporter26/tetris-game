@@ -1,5 +1,5 @@
 
-
+const startBtn = document.getElementById("btn-start-game")
 const canvas = document.getElementById("canvas");
 const tetrisImg = document.getElementById("tetrisImg");
 
@@ -15,7 +15,45 @@ ctx.stroke();
 
 tetrisImg.style.width ="70px";
 
-ctx.drawImage(tetrisImg, 0, 0);
+let tetrisImgStartY = 120;
+let tetrisImgStartX = -10;
+
+ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+
+startBtn.addEventListener("click", drop);
+
+function drop(){
+
+    // for(tetrisImgStartX = -10; tetrisImgStartX < 450; tetrisImgStartX + 10){
+    //     ctx.fillRect(0, 0, 300, 450);
+    //     tetrisImgStartX =  tetrisImgStartX + 10;
+    //     ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+    // }
+
+//callback??
+
+
+    while(tetrisImgStartX < 100){
+        tetrisImgStartX =  tetrisImgStartX + 10;
+        console.log(tetrisImgStartX);
+        // ctx.fillRect(0, 0, 300, 450);
+        // setInterval(function(){
+        //     alert("working")
+        //     // ctx.fillRect(0, 0, 300, 450);
+        //     // tetrisImgStartX =  tetrisImgStartX + 10;
+        //     // ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+        // }, 2000);
+        // ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+        setInterval(function(){
+            // alert("Hello"); 
+            
+            ctx.fillRect(0, 0, 300, 450);
+            ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+        }, 200);
+    }
+
+   
+}
 
 
 
