@@ -4,14 +4,16 @@ const canvas = document.getElementById("canvas");
 const tetrisImg = document.getElementById("tetrisImg");
 
 
+
+
 const ctx = canvas.getContext("2d");
 
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(0, 0, 300, 450);
 
-ctx.moveTo(0, 0);
-ctx.lineTo(300, 450);
-ctx.stroke();
+// ctx.moveTo(0, 0);
+// ctx.lineTo(300, 450);
+// ctx.stroke();
 
 tetrisImg.style.width ="70px";
 
@@ -20,9 +22,9 @@ let tetrisImgStartX = -10;
 
 ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
 
-startBtn.addEventListener("click", drop);
 
-function drop(){
+
+let drop = function(){
 
     // for(tetrisImgStartX = -10; tetrisImgStartX < 450; tetrisImgStartX + 10){
     //     ctx.fillRect(0, 0, 300, 450);
@@ -31,29 +33,51 @@ function drop(){
     // }
 
 //callback??
+    console.log("drop worked");
+   
 
+    var count=0;
+    
+var intervalID = setInterval(function(){
+  var x = 10;
+  var y = 30;
+  console.log("Move " + x + " horizontally and " + y + " vertically.");
+  
+  count=count+1;
+  if (count==10) clearInterval(intervalID);
+}, 500);
 
-    while(tetrisImgStartX < 100){
-        tetrisImgStartX =  tetrisImgStartX + 10;
-        console.log(tetrisImgStartX);
-        // ctx.fillRect(0, 0, 300, 450);
-        // setInterval(function(){
-        //     alert("working")
+// intervalID();
+
+    function dropAction(){
+
+        // while(tetrisImgStartX < 100){
+        //     tetrisImgStartX =  tetrisImgStartX + 10;
+        //     console.log(tetrisImgStartX);
         //     // ctx.fillRect(0, 0, 300, 450);
-        //     // tetrisImgStartX =  tetrisImgStartX + 10;
+        //     // setInterval(function(){
+        //     //     alert("working")
+        //     //     // ctx.fillRect(0, 0, 300, 450);
+        //     //     // tetrisImgStartX =  tetrisImgStartX + 10;
+        //     //     // ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+        //     // }, 2000);
         //     // ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
-        // }, 2000);
-        // ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
-        setInterval(function(){
-            // alert("Hello"); 
-            
-            ctx.fillRect(0, 0, 300, 450);
-            ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
-        }, 200);
+        //     setInterval(function(callback){
+        //         // alert("Hello"); 
+                
+        //         ctx.fillRect(0, 0, 300, 450);
+        //         ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+        //         callback()
+        //     }, 200);
+        
     }
+
+    
 
    
 }
+
+startBtn.addEventListener("click", drop);
 
 
 
