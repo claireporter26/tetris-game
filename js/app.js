@@ -36,15 +36,21 @@ let drop = function(){
     console.log("drop worked");
    
 
-    var count=0;
+    // var count=0;
     
 var intervalID = setInterval(function(){
-  var x = 10;
-  var y = 30;
-  console.log("Move " + x + " horizontally and " + y + " vertically.");
+//   var x = 10;
+//   var y = 30;
+
+  console.log("X is " + tetrisImgStartX + ", Y is " + tetrisImgStartY);
   
-  count=count+1;
-  if (count==10) clearInterval(intervalID);
+//   count=count+1;
+tetrisImgStartX = tetrisImgStartX + 10;
+  console.log(tetrisImgStartX);
+  ctx.fillRect(0, 0, 300, 450);
+    //     tetrisImgStartX =  tetrisImgStartX + 10;
+        ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+  if (tetrisImgStartX == 390) clearInterval(intervalID);
 }, 500);
 
 // intervalID();
