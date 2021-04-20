@@ -42,16 +42,24 @@ var intervalID = setInterval(function(){
 //   var x = 10;
 //   var y = 30;
 
-  console.log("X is " + tetrisImgStartX + ", Y is " + tetrisImgStartY);
+  // console.log("X is " + tetrisImgStartX + ", Y is " + tetrisImgStartY);
   
 //   count=count+1;
+let tetrisImgRect = tetrisImg.getBoundingClientRect();
+console.log(tetrisImgRect)
+
 tetrisImgStartX = tetrisImgStartX + 10;
-  console.log(tetrisImgStartX);
+
+  // console.log(tetrisImgStartX);
   ctx.fillRect(0, 0, 300, 450);
     //     tetrisImgStartX =  tetrisImgStartX + 10;
         ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
+        // tetrisImgRect.style.border = "2px solid blue"
+        console.log(tetrisImgRect.top + tetrisImgRect.width);
   if (tetrisImgStartX == 390) clearInterval(intervalID);
 }, 500);
+
+ 
 
 // intervalID();
 
