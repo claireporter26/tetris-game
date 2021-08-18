@@ -26,27 +26,14 @@ ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
 
 let drop = function(){
 
-    // for(tetrisImgStartX = -10; tetrisImgStartX < 450; tetrisImgStartX + 10){
-    //     ctx.fillRect(0, 0, 300, 450);
-    //     tetrisImgStartX =  tetrisImgStartX + 10;
-    //     ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
-    // }
-
-//callback??
-    console.log("drop worked");
+    // console.log("drop worked");
    
 
-    // var count=0;
     
 var intervalID = setInterval(function(){
-//   var x = 10;
-//   var y = 30;
 
-  // console.log("X is " + tetrisImgStartX + ", Y is " + tetrisImgStartY);
-  
-//   count=count+1;
 let tetrisImgRect = tetrisImg.getBoundingClientRect();
-console.log(tetrisImgRect)
+// console.log(tetrisImgRect)
 
 tetrisImgStartX = tetrisImgStartX + 10;
 
@@ -55,8 +42,8 @@ tetrisImgStartX = tetrisImgStartX + 10;
     //     tetrisImgStartX =  tetrisImgStartX + 10;
         ctx.drawImage(tetrisImg, tetrisImgStartY, tetrisImgStartX);
         // tetrisImgRect.style.border = "2px solid blue"
-        console.log(tetrisImgRect.top + tetrisImgRect.width);
-  if (tetrisImgStartX == 390) clearInterval(intervalID);
+        // console.log(tetrisImgRect.top + tetrisImgRect.width);
+  if (tetrisImgStartX == 380) clearInterval(intervalID);
 }, 500);
 
  
@@ -92,6 +79,31 @@ tetrisImgStartX = tetrisImgStartX + 10;
 }
 
 startBtn.addEventListener("click", drop);
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+  
+    if (e.keyCode == '40') {
+        // down arrow
+        console.log("down");
+        tetrisImgStartX = 380;
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+       console.log("left");
+       tetrisImgStartY = tetrisImgStartY - 10;
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+       console.log("right");
+       tetrisImgStartY = tetrisImgStartY + 10;
+    }
+
+}
 
 
 
